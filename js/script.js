@@ -48,12 +48,16 @@ button.addEventListener("click", async () => {
         videoElement.play();
       }
 
-      // Request Picture in Picture
-      await videoElement.requestPictureInPicture();
+      // Attempt to enter Picture-in-Picture, with a fallback to Fullscreen
+      if (document.pictureInPictureEnabled) {
+        await videoElement.requestPictureInPicture();
+      } else {
+        await videoElement.requestFullscreen();
+      }
     }
   } catch (err) {
-    // This will catch errors from requestPictureInPicture
-    console.log("Error during PiP request:", err);
+    console.log("Error during PiP/Fullscreen request:", err);
+    alert("Your browser does not support entering Picture-in-Picture or Fullscreen for this content.");
   } finally {
     button.disabled = false;
   }
