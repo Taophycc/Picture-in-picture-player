@@ -28,7 +28,7 @@ cd Picture-in-picture-player
 open index.html
 ```
 
-## 🛠️ Tech
+## 🛠️ Tech stack
 *   HTML5, CSS3 (Flexbox)
 *   Modern JavaScript (ES6+)
 *   Web APIs:
