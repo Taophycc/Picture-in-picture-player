@@ -1,25 +1,37 @@
-# Picture-in-Picture Project
+# Picture-in-Picture Player
 
-A simple web application demonstrating the Picture-in-Picture API with screen capture functionality. This project allows a user to select a screen, window, or tab and display it in a floating, always-on-top window.
+A simple web app that demonstrates the **Screen Capture API** and **Picture-in-Picture API**.  
+Select a screen, window, or tab and pop it into an always-on-top PiP window.  
 
-## Features
+## 🚀 Live Demo
+[Demo Link](#) <!-- Replace with GitHub Pages / Vercel link -->
 
-*   **Screen Capture:** Utilizes the `getDisplayMedia` API to capture screen content.
-*   **Picture-in-Picture Mode:** Displays the captured stream in a floating PiP window using the `requestPictureInPicture` API.
-*   **Robust Error Handling:** Gracefully handles cases where the user cancels the screen share prompt.
-*   **State Management:** Automatically detects when a user stops sharing their screen and resets the application state.
+## ✨ Features
+- Screen selection via `getDisplayMedia()`
+- Floating PiP window with `requestPictureInPicture()`
+- Fallback to fullscreen if PiP isn’t supported
+- Auto reset when screen sharing stops
+- Works on Chrome, Edge, Firefox (limited Safari support)
 
-## How to Use
+## 🖥️ Compatibility
+| Browser | PiP | Screen Capture |
+|---------|-----|----------------|
+| Chrome  | ✅  | ✅ |
+| Edge    | ✅  | ✅ |
+| Firefox | ✅  | ✅ |
+| Safari  | ❌  | Partial |
 
-1.  Open the `index.html` file in a compatible web browser (latest versions of Chrome, Firefox, or Edge recommended).
-2.  Click the "START" button.
-3.  Your browser will prompt you to select a screen, window, or tab to share.
-4.  Once selected, the content will appear in a Picture-in-Picture window.
+## ⚙️ Usage
+```bash
+git clone https://github.com/Taophycc/Picture-in-picture-player.git
+cd Picture-in-picture-player
+open index.html
+```
 
-## Technology Used
-
-*   HTML5
-*   CSS3
-*   JavaScript (ES6+)
-*   [Screen Capture API (`getDisplayMedia`)](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API)
-*   [Picture-in-Picture API](https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API)
+## 🛠️ Tech
+*   HTML5, CSS3 (Flexbox)
+*   Modern JavaScript (ES6+)
+*   Web APIs:
+    *   [Screen Capture API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API)
+    *   [Picture-in-Picture API](https://developer.mozilla.org/en-US/docs/Web/API/Picture-in-Picture_API)
+    *   [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API)
