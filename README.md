@@ -4,7 +4,7 @@ A simple web app that demonstrates the **Screen Capture API** and **Picture-in-P
 Select a screen, window, or tab and pop it into an always-on-top PiP window.  
 
 ## 🚀 Live Demo
-[Demo Link](#) <!-- Replace with GitHub Pages / Vercel link -->
+[Demo Link](https://pip-player.vercel.app/)
 
 ## ✨ Features
 - Screen selection via `getDisplayMedia()`
